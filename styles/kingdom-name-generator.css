@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif; 
+    background: url('../assets/kingdom-name-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-transform: none 
+}
+
+.container {
+    text-align: center;
+    z-index: 1; 
+    position: relative;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #d3b5f7; 
+    text-shadow: 0 0 15px #7b3f92, 0 0 30px #9c56d2, 0 0 60px #6a2c79;
+    font-weight: bold;
+   
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: rgba(106, 44, 121, 0.5); 
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    
+}
+
+button:hover {
+    background-color: rgba(156, 86, 210, 0.8); 
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #d0b7d6;
+}
+
+#generated-name {
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #c8a1e0;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.7), 0 0 30px #ff9eff;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+#button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

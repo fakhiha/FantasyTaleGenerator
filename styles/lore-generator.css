@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    background: url('../assets/lore-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-transform: none;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem; /* Slightly smaller for better fit */
+    color: #faf1d8;
+    text-shadow: 0 0 15px #d5c78e, 0 0 30px #ddca8a, 0 0 60px #eae4dc;
+    font-weight: bold;
+}
+
+#lore-container {
+    margin-top: 40px;
+    width: 85%; /* Increased width */
+    max-width: 900px; /* Max width to avoid overflowing */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    white-space: pre-line;
+    word-wrap: break-word;
+    overflow: visible;  /* Remove the scrollbar */
+}
+
+#lore-text {
+    font-size: 1.2rem; /* Smaller text size */
+    color: #f0e3cb;
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.7), 0 0 30px #ebdfb6;
+    word-wrap: break-word;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: rgba(220, 213, 163, 0.5);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(236, 226, 190, 0.8);
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #f9f0e2;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+#button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

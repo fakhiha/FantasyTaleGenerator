@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lore Generator</title>
+    <link rel="stylesheet" href="styles/lore-generator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-music" preload="auto" loop>
+        <source src="assets/background-music.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container">
+        <header>
+            <h1>Lore Generator</h1>
+        </header>
+
+        <main>
+            <div id="lore-container">
+                <!-- The generated lore will be displayed here -->
+                <p id="lore-text"></p>
+            </div>
+
+            <!-- Button to generate new lore -->
+            <button id="generateLoreBtn">Generate New Lore</button>
+        </main>
+
+        <footer>
+            <p>&copy; 2024. Created for a world of imagination.</p>
+        </footer>
+    </div>
+
+    <script src="scripts/lore-generator.js"></script>
+    <script>
+        if (performance.navigation.type == 1) {
+            window.location.href = "index.html"; // Redirect to the landing page on reload
+        }
+    </script>
+</body>
+</html>

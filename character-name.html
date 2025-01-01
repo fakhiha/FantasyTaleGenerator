@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Name Generator</title>
+    <link rel="stylesheet" href="styles/chatacter-name.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-music" preload="auto" loop>
+        <source src="assets/background-music.mp3" type="audio/mp3">
+    </audio>
+    <div class="container">
+        <header>
+            <h1>Character Name Generator</h1>
+        </header>
+        <main>
+            <button onclick="generateCharacterName()">Generate Character Name</button>
+            <div id="generated-name"></div>
+            <br>
+            <!-- Initially Hidden Next Button -->
+            <button id="next-button" onclick="goToLorePage()" style="display: none;">Next</button>
+        </main>
+        <footer>
+            <p>&copy; 2024. Created for a world of imagination.</p>
+        </footer>
+    </div>
+
+    <script src="scripts/character-name.js"></script>
+    <script>
+        if (performance.navigation.type == 1) {
+            window.location.href = "index.html"; // Redirect to the landing page on reload
+        }
+
+        function goToLorePage() {
+            window.location.href = "lore-generator.html"; // Link to Lore Generator Page
+        }
+    </script>
+</body>
+</html>
